@@ -1,44 +1,186 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>My Site</title>
-  <style>
-    body {
-      margin: 0;
-      font-family: Arial, sans-serif;
-      display: grid;
-      place-items: center;
-      min-height: 100vh;
-      background: #0f172a;
-      color: white;
-    }
-
-    .card {
-      background: #1e293b;
-      padding: 2rem;
-      border-radius: 16px;
-      text-align: center;
-      width: min(90%, 700px);
-    }
-
-    h1 {
-      margin-top: 0;
-      font-size: 2rem;
-    }
-
-    p {
-      line-height: 1.6;
-      opacity: 0.8;
-    }
-  </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mitchelstown Dental</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <main class="card">
-    <h1>My Website is Live 🚀</h1>
-    <p>This is my starter site.</p>
-    <p>I’ll redesign this later.</p>
+
+  <header>
+    <div class="topbar">
+      <div class="container topbar-content">
+        <p>info@mitchelstowndental.com</p>
+        <p>025 24197</p>
+        <div class="socials">
+          <a href="#">Facebook</a>
+          <a href="#">X</a>
+          <a href="#">YouTube</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="navbar">
+      <div class="container nav-content">
+        <a href="#" class="logo">
+          <img src="images/logo.png" alt="Mitchelstown Dental Logo">
+        </a>
+
+        <nav>
+          <ul class="nav-links">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Fees</a></li>
+            <li><a href="#">Staff</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container hero-content">
+        <div class="hero-image">
+          <img src="images/hero-dentist.png" alt="Dental clinic">
+        </div>
+        <div class="hero-text">
+          <p class="eyebrow">Mitchelstown Dental</p>
+          <h1>General, Orthodontics and Cosmetic Dentistry</h1>
+          <p>
+            Clare Murray and Derek Riordan took over this thriving clinic in 2002.
+            Together with their team, they provide high quality general and cosmetic
+            dentistry in a relaxed and friendly atmosphere.
+          </p>
+          <a href="#" class="btn">Contact our Team</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="services">
+      <div class="container">
+        <div class="cards">
+          <article class="card">
+            <h2>General & Cosmetic Dentistry</h2>
+            <p>
+              Prevention, diagnosis, and treatment of common oral health issues,
+              including bonding, whitening, crowns, bridges and more.
+            </p>
+            <a href="#" class="btn-outline">View All Services</a>
+          </article>
+
+          <article class="card dark">
+            <h2>Hygienist</h2>
+            <p>
+              Professional teeth cleaning, gum disease prevention and oral hygiene education.
+            </p>
+            <a href="#" class="btn-outline light">Contact our Team</a>
+          </article>
+
+          <article class="image-card">
+            <img src="images/daisy-surgery-1.jpg" alt="Dental surgery room">
+          </article>
+
+          <article class="image-card">
+            <img src="images/daisy-surgery-2.jpg" alt="Dental treatment room">
+          </article>
+
+          <article class="card">
+            <h2>Orthodontics</h2>
+            <p>
+              Diagnosing, preventing and correcting misaligned teeth and jaws using braces,
+              aligners and other corrective appliances.
+            </p>
+            <a href="#" class="btn-outline">Read More</a>
+          </article>
+
+          <article class="card dark">
+            <h2>Sedation</h2>
+            <p>
+              Sedation dentistry helps patients feel calm and relaxed during treatment.
+            </p>
+            <a href="#" class="btn-outline light">View All Services</a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="promo">
+      <div class="container promo-content">
+        <h2>Orthodontics</h2>
+        <p>
+          Dr Clare Murray provides orthodontic services to adult and child patients,
+          including Invisalign, clear braces, fixed braces and removable appliances.
+        </p>
+        <a href="#" class="btn">Read More</a>
+      </div>
+    </section>
+
+    <section class="about">
+      <div class="container about-content">
+        <div class="about-image">
+          <img src="images/team.png" alt="Dental team">
+        </div>
+        <div class="about-text">
+          <h2>Mitchelstown Dental</h2>
+          <p>
+            Using up-to-date techniques and technology, including intra-oral cameras,
+            digital scanners and modern patient comforts, we offer a full range of
+            general, orthodontic and cosmetic dentistry.
+          </p>
+          <p>We look forward to meeting you and caring for your smile.</p>
+          <a href="#" class="btn">Contact our Team</a>
+        </div>
+      </div>
+    </section>
   </main>
+
+  <footer>
+    <div class="container footer-content">
+      <div>
+        <h3>Mitchelstown Dental Clinic</h3>
+        <p>
+          New Square,<br>
+          Mitchelstown,<br>
+          P67 N529<br>
+          Co. Cork
+        </p>
+        <p>
+          info@mitchelstowndental.com<br>
+          025 24197
+        </p>
+      </div>
+
+      <div>
+        <h3>Opening Hours</h3>
+        <p>
+          Monday–Friday: 9am–5:30pm<br>
+          Saturday: Closed<br>
+          Sunday: Closed<br>
+          Bank Holidays: Closed
+        </p>
+      </div>
+
+      <div>
+        <h3>Useful Links</h3>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Staff</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Services</a></li>
+          <li><a href="#">Orthodontics</a></li>
+          <li><a href="#">Sedation</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="copyright">
+      <p>© 2025–2026 Mitchelstown Dental Clinic</p>
+    </div>
+  </footer>
+
 </body>
 </html>
