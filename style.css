@@ -5,6 +5,17 @@
   box-sizing: border-box;
 }
 
+/* ===== VARIABLES ===== */
+:root {
+  --primary: #2c3e50;
+  --accent: #4a90e2;
+  --light-blue: #eaf4ff;
+  --grey: #f5f7fa;
+  --text: #555;
+  --white: #ffffff;
+}
+
+/* ===== BASE ===== */
 body {
   font-family: Arial, Helvetica, sans-serif;
   line-height: 1.6;
@@ -12,17 +23,6 @@ body {
   background: #ffffff;
 }
 
-/* ===== VARIABLES ===== */
-:root {
-  --primary: #2c3e50;      /* dark blue-grey */
-  --accent: #4a90e2;       /* cool blue */
-  --light-blue: #eaf4ff;
-  --grey: #f5f7fa;
-  --text: #555;
-  --white: #ffffff;
-}
-
-/* ===== GLOBAL ===== */
 .container {
   width: 90%;
   max-width: 1200px;
@@ -37,6 +37,11 @@ p {
   color: var(--text);
 }
 
+img {
+  max-width: 100%;
+  display: block;
+}
+
 /* ===== TOP BAR ===== */
 .topbar {
   background: var(--primary);
@@ -49,6 +54,8 @@ p {
   justify-content: space-between;
   align-items: center;
   padding: 10px 0;
+  gap: 20px;
+  flex-wrap: wrap;
 }
 
 .topbar a {
@@ -68,10 +75,14 @@ p {
   justify-content: space-between;
   align-items: center;
   padding: 15px 0;
+  gap: 20px;
 }
 
-.logo img {
-  height: 60px;
+.logo {
+  text-decoration: none;
+  color: var(--primary);
+  font-size: 1.3rem;
+  font-weight: bold;
 }
 
 .nav-links {
@@ -102,9 +113,15 @@ p {
   gap: 40px;
 }
 
+.hero-image,
+.hero-text {
+  flex: 1;
+}
+
 .hero-image img {
   width: 100%;
   max-width: 450px;
+  border-radius: 12px;
 }
 
 .hero-text h1 {
@@ -144,6 +161,12 @@ p {
   text-decoration: none;
   border-radius: 6px;
   margin-top: 15px;
+  transition: 0.3s;
+}
+
+.btn-outline:hover {
+  background: white;
+  color: var(--primary);
 }
 
 .btn-outline.light {
@@ -168,11 +191,13 @@ p {
   gap: 25px;
 }
 
-.card {
+.card,
+.image-card {
   background: white;
   padding: 30px;
   border-radius: 10px;
-  box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+  min-height: 260px;
 }
 
 .card.dark {
@@ -185,11 +210,15 @@ p {
   color: white;
 }
 
+.image-card {
+  padding: 0;
+  overflow: hidden;
+}
+
 .image-card img {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  border-radius: 10px;
 }
 
 /* ===== PROMO ===== */
@@ -234,9 +263,15 @@ p {
   align-items: center;
 }
 
+.about-image,
+.about-text {
+  flex: 1;
+}
+
 .about-image img {
   width: 100%;
   max-width: 400px;
+  border-radius: 12px;
 }
 
 .about-text h2 {
@@ -305,6 +340,6 @@ footer li {
   }
 
   .nav-links {
-    display: none; /* later you can add mobile menu */
+    display: none;
   }
 }
